@@ -1,0 +1,33 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eee;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.container {
+  background-color: white;
+  width: 800px;
+  padding: 20px; 
+  box-sizing: border-box;
+  display: flex;
+}
+
+main {
+  flex: 3;
+  order: 2;
+}
+
+aside.sidebar-satu {
+  flex: 1;
+  order: 1;
+}
+
+aside.sidebar-dua {
+  flex: 1;
+  order:3;
+}

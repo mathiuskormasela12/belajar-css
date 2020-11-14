@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar CSS 3</title>
+  <style>
+
+    .kotak {
+      height: 100px;
+      width: 100px;
+      margin-bottom: 10px;
+      margin-left: 50px;
+    }
+
+    #kotak0 {
+      perspective:100px;
+    }
+
+    #div1 {
+      background-color: red;
+      transform: rotateX(15deg);
+    }
+
+    #kotak1 {
+      perspective: 59px;
+      perspective-origin: 90% 120%;
+    }
+
+    #div2 {
+      background-color: blue;
+      transform: rotateX(15deg);
+    }
+
+    #kotak3 {
+      perspective: 100px;
+      perspective-origin:20% 20%;
+    }
+
+    #div3 {
+      background-color: lightcoral;
+      transform: translateZ(1px);
+      transition: transform 2s;
+    }
+
+    #div3:hover {
+      transform: translateZ(10px);
+    }
+
+    #kotak4 {
+      perspective: 100px;
+      perspective-origin:20% 20%;
+    }
+
+    #div4 {
+      background-color: lightgreen;
+      transition: transform 2s;
+    }
+
+    #div4:hover {
+      transform: rotateX(45deg);
+    }
+
+    #kotak5 {
+      perspective:500px ;
+      perspective-origin: 80% 50%;
+    }
+
+    #div5 {
+      background-color: teal;
+      transform: scaleX(3.5) rotateY(45deg);
+    }
+
+    #div6 {
+      background-color: thistle;
+      /*  
+        Scale Z berfungsi untuk 
+        mendekatkan elemen ke layar.
+      */
+      transform: scaleZ(2.5) rotateY(45deg);
+    }
+
+  </style>
+</head>
+<body>
+  
+  <h1>Belajar Perspective & Perspective Origin</h1>
+
+  <div class="kotak" id="kotak0">
+    <div id="div1" class="kotak"></div>
+  </div>
+
+  <div class="kotak" id="kotak1">
+    <div id="div2" class="kotak"></div>
+  </div>
+
+  <h1>Belajar Translate & Rotate 3D</h1>
+
+  <div class="kotak" id="kotak3">
+    <div id="div3" class="kotak"></div>
+  </div>
+
+  <div class="kotak" id="kotak4">
+    <div id="div4" class="kotak"></div>
+  </div>
+
+  <h1>Belajar Scale 3D</h1>
+
+  <div class="kotak" id="kotak5">
+    <div id="div5" class="kotak">Scale X</div>
+    <div id="div6" class="kotak">Scale Z</div>
+  </div>
+
+</body>
+</html>

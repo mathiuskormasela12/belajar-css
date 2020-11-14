@@ -1,0 +1,31 @@
+.container {
+  width: 600px;
+  border: 2px solid black;
+  margin:auto;
+  padding: 5px;
+}
+
+.box {
+  height: 80px;
+  width: 80px;
+  background-color: salmon;
+  line-height: 80px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin: 2px;
+}
+
+.box {
+  float: right;
+}
+
+/* .clear {
+  clear:right;
+} */
+
+.container::after {
+  content: '';
+  display: block;
+  clear:right;
+}

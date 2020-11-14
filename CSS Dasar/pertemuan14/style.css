@@ -1,0 +1,92 @@
+body {
+  background: #dfdfdf url('gambar/logo.png') no-repeat fixed right;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+  display: inline;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration:underline;
+  display: inline;
+}
+
+#text_pendek {
+  font-weight:bold;
+  font-size: 24px;
+  background-color: yellow;
+  width: 50%;
+  height: 200px;
+  max-width: 30%;
+  max-height:100px;
+  display:none;
+  /* visibility: hidden; */
+}
+
+#text_panjang {
+  letter-spacing:5px;
+  word-spacing:5px;
+  text-align:justify;
+  text-indent: 30px;
+  line-height: 20px;
+}
+
+.menu {
+  display: inline-block;
+  /* height: 50px;
+  width: 100px; */
+  text-decoration: none;
+  /* border-width:3px;
+  border-style: solid;
+  border-color:black; */
+  border: 3px solid black;
+  padding:10px 5px 10px 5px;
+}
+
+.menu:link {
+  color: white;
+  background: grey;
+}
+
+.menu:visited {
+  color: white;
+  background: yellow;
+}
+
+.menu:hover {
+  background:green;
+}
+
+.menu:active {
+  background: white;
+}
+
+#menu_wrap {
+  margin: 10px 0 50px 0;
+}
+
+/*  
+  ===== Belajar Position =====
+  1. Static
+     Posisi default. Kita 
+     tidak dapat memindahkan posisi 
+     element HTML
+  2. Relative
+     Dengan relative kita dapat 
+     memindahkan posisi element HTML
+     dari posisi semulanya dengan menggunakan
+     property top, left,bottom dan right
+*/
+#menu_member {
+  position: relative;
+  /* Memberi jarak sebesar 10px dari 
+     tempat element ini sebelumnya 
+     berdiri */
+  top: 70px;
+  left: 20px;
+}

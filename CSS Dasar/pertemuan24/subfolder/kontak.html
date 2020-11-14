@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Kontak Sekolah Koding</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+
+    <!-- Menu website -->
+    <div>
+      <a href="../index.html">Home</a>
+      <a href="member.html">Member</a>
+      <a href="kontak.html">Kontak</a>
+    </div>
+
+    <div>
+      <span>
+        <a href="#">Syarat</a>
+      </span>
+    </div>
+
+    <div class="cob">
+      <h2>Hello h2</h2>
+      <span>
+        <h2>Hello H2</h2>
+      </span>
+    </div>
+
+    <p>Teks baru</p>
+
+    <!-- bagian awal, isinya tag heading -->
+    <div>
+      <h1> Kontak Sekolah Koding </h1>
+      <span></span>
+      <h2> Hubungi tim sekolah koding </h2>
+    </div>
+
+    <form>
+
+      <!-- 
+        Berfungsi untuk mengelompokan form dan 
+        memberi style berupa kotak.
+      -->
+      <fieldset>
+        <!-- 
+          Berfungsi untuk memberi judul atau keterangan 
+          tentang fieldset atau tentang input-input 
+          yang ada didalam fieldset 
+        -->
+        <legend>Nama dan Pesan</legend>
+        <label for="nama_user">Nama</label>
+        <input type="text" placeholder="Nama User" value="Nama User" id="nama_user">
+        <br>
+        <label for="pesan_user">Pesan</label>
+        <textarea cols="100" rows="7" id="pesan_user">Pesan saya adalah....</textarea>
+        <br>
+      </fieldset>
+
+      <fieldset>
+        <label>Hobi</label>
+        <legend>Pilihan Data</legend>
+        <input type="checkbox" name="hobi_user" value="0"> Menggambar 
+        <input type="checkbox" name="hobi_user" value="1" checked> Menulis   
+        <input type="checkbox" name="hobi_user" value="2"> Bernyanyi  
+        <br>
+        <label>Jenis Kelamin</label>
+        <br>
+        <input type="radio" name="gender" value="0" checked>Laki-Laki 
+        <input type="radio" name="gender" value="1"> Perempuan <br>
+
+        <label>Pelajaran</label>
+        <select>
+          <optgroup label="Frontend">
+            <option value="html">HTML</option>
+            <option value="css" selected>CSS</option>
+          </optgroup>
+
+          <optgroup label="Backend">
+            <option value="php">PHP</option>
+            <option value="db">Database</option>
+          </optgroup>
+        </select>
+      </fieldset>
+
+      <br>
+      <!-- 
+          Berfungsi untuk memvalidasi 
+          atau mengirim data. attribute value
+          digunakan untuk mengubah text default 
+          dari button, jika kita tidak mengatur value
+          nya maka text default button akan ditampilkan
+          yaitu submit.
+      -->
+      <input type="submit" value="Kirim Data">
+    </form>
+    <p>&copy; SekolahKoding</p>
+
+  </body>
+</html>

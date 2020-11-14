@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar CSS 3</title>
+  <style>
+
+    #text1 {
+      text-shadow:5px 10px 10px black;
+    }
+
+    #div1 {
+      width: 50px;
+      background-color: red;
+      /* 
+        Untuk menyembunyikan teks 
+        yang udah meluap. 
+
+        value : 
+        hidden = untuk menyembunyikan
+                 teks yang meluap
+        scroll = untuk membuat teks bisa
+                 discroll ketika teksnya
+                 udah meluap.
+      */
+      /* overflow:hidden; */
+      /*  
+        Untuk menentukan style
+        ketika kita menyembunyikan
+        teks yang meluap. 
+
+        contoh : 
+        before 
+        sekolah koding adalah sekolah
+        after 
+        sekolah koding....
+      */
+      /* text-overflow:ellipsis; */
+      /*  
+        word-wrap berfungsi untuk
+        memaksa ketika teksnya sudah 
+        meluap maka akan dibuat enter. 
+
+        contoh : 
+        before
+        ||||||||||
+        | sekolah|koding adalah
+        | situs b|elajar
+        ||||||||||
+        after 
+        ||||||||||
+        | sekolah|
+        | adalah |
+        | situs b|
+        | belajar|
+        ||||||||||
+      */
+      word-wrap:break-word;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Belajar Text Shadow</h1>
+
+  <p id="text1">Sekolah Koding</p>
+
+  <h1>Belajar Text Overflow & Word Wrap</h1>
+
+  <div id="div1">
+    SekolahKoding adalah website untuk belajar 
+    programming secara online.
+  </div>
+
+</body>
+</html>

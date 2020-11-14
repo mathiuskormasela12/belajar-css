@@ -1,0 +1,110 @@
+body {
+  background: #dfdfdf url('gambar/logo.png') no-repeat fixed right;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+  display: inline;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration:underline;
+  display: inline;
+}
+
+#text_pendek {
+  font-weight:bold;
+  font-size: 24px;
+  background-color: yellow;
+  width: 50%;
+  height: 200px;
+  max-width: 30%;
+  max-height:100px;
+  display:none;
+  /* visibility: hidden; */
+}
+
+#text_panjang {
+  letter-spacing:5px;
+  word-spacing:5px;
+  text-align:justify;
+  text-indent: 30px;
+  line-height: 20px;
+}
+
+.menu {
+  display: inline-block;
+  /* height: 50px;
+  width: 100px; */
+  text-decoration: none;
+  /*  
+    ==== Belajar Border & Padding ====
+
+    Border untuk membuat garis.
+
+    border-width = ukuran garisnya
+    border-style = gaya garisnya
+    value border style :
+    a. solid = garis biasa
+    b. dotted = garis bulet
+    c. dashed = garis - 
+    d. dll
+    border-color = untuk mengatur warna
+                   garis
+
+    short hand :
+    border: border-width border-style border-color;
+
+    Padding adalah jarak antara konten dengan
+    border.
+
+    padding-top = mengatur padding atas
+    padding-right = mengatur padding kanan
+    padding-bottom = mengatur padding bawah
+    padding-left = mengatur padding kiri
+
+    shorthand :
+    padding: top right bottom left;
+  */
+  /* border-width:3px;
+  border-style: solid;
+  border-color:black; */
+  border: 3px solid black;
+  padding:10px 5px 10px 5px;
+  /* 
+    ket : 
+    agar padding dapat bekerja maksimal
+    di sarankan untuk menghilangkan
+    tinggi dan lebar. Karena jika
+    tinggi dan lebar tidak di hapus
+    maka padding akan menambahkan jaraknya
+    jadi akan terlihat tidak seimbang jarak
+    ke atas, ke bawah dan kanan kiri.
+  */
+}
+
+.menu:link {
+  color: white;
+  background: grey;
+}
+
+.menu:visited {
+  color: white;
+  background: yellow;
+}
+
+.menu:hover {
+  background:green;
+}
+
+.menu:active {
+  background: white;
+}
+
+#menu_wrap {
+  margin: 10px 0 50px 0;
+}

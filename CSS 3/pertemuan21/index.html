@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap" rel="stylesheet">
+  <title>Belajar CSS 3</title>
+  <style>
+
+    /*  
+      untuk mengimport font
+      dari luar.
+    */
+    @font-face {
+      /* mendeklarasikan nama font baru */
+      /* namanya bebas */
+      font-family:sekolahkoding ;
+      /* sumber dari font-nya */
+      src: url('fonts/Roboto/Roboto-Regular.ttf');
+    }
+
+    .box {
+      /* untuk memanggil fontnya udh di import */
+      /* font-family: sekolahkoding; */
+      font-family: 'Comic Neue', cursive;
+      width: 250px;
+      height: 150px;
+      background-color: sandybrown;
+      overflow: hidden;
+      resize: both;
+    }
+
+    img {
+      opacity: 0.4;
+      transition: opacity 2s;
+    }
+
+    img:hover {
+      opacity: 1;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="box">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum debitis deleniti, minima saepe, quod repellat repudiandae explicabo reprehenderit dolores placeat pariatur possimus quibusdam vero aut atque ullam eum. Reiciendis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum debitis deleniti, minima saepe, quod repellat repudiandae explicabo reprehenderit dolores placeat pariatur possimus quibusdam vero aut atque ullam eum. Reiciendis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum debitis deleniti, minima saepe, quod repellat repudiandae explicabo reprehenderit dolores placeat pariatur possimus quibusdam vero aut atque ullam eum. Reiciendis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum debitis deleniti, minima saepe, quod repellat repudiandae explicabo reprehenderit dolores placeat pariatur possimus quibusdam vero aut atque ullam eum. Reiciendis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum debitis deleniti, minima saepe, quod repellat repudiandae explicabo reprehenderit dolores placeat pariatur possimus quibusdam vero aut atque ullam eum. Reiciendis!
+  </div>
+
+  <img src="coba.jpg" width="300" alt="">
+
+</body>
+</html>

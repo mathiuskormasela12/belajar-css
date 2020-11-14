@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar CSS 3</title>
+  <style>
+
+    @font-face {
+      font-family:sekolahkoding ;
+      src: url('fonts/Roboto/Roboto-Regular.ttf');
+    }
+
+    .box {
+      font-family: sekolahkoding;
+    }
+
+    /*  
+      akan memberi warna merah
+      kepada semua element yang berada
+      di dalam div box kecuali elemen
+      yang memiliki id dua.
+    */
+    .box :not(#dua) {
+      color:red;
+    }
+
+    /*  
+      untuk memilih elemen yang merupakan
+      anak pertama dari parent elementnya
+    */
+    p:first-child {
+      background-color: blueviolet;
+    }
+
+    /* 
+      untuk memilih elemen yang merupakan
+      anak terakhir dari elemen parent-nya.
+    */
+    p:last-child {
+      font-size: 30px;
+    }
+
+    /*  
+      untuk memilih elemen p 
+      yang merupakan anak satu-satunya
+      dari parent elementnya
+    */
+    p:only-child {
+      text-decoration: line-through;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <h1>Belajar Pseudo Classes</h1>
+
+  <div>
+    <p>Algerian</p>
+  </div>
+
+  <div>
+    <p>Algerian 1</p>
+    <p>Algerian 2</p>
+  </div>
+
+  <div class="box">
+    <span>Span Pertama</span>
+    <p id="satu">Paragraf Pertama</p>
+  </div>
+
+  <div class="box">
+    <p id="satu">Paragraf Pertama</p>
+    <p id="dua">Paragraf Kedua</p>
+    <p id="tiga">Paragraf Ketiga</p>
+  </div>
+
+</body>
+</html>

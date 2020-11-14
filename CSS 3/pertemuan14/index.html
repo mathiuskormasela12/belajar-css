@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan 3D</title>
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      margin: 0 auto;
+      width: 90vw;
+      perspective:900px;
+    }
+
+    .card {
+      height: 250px;
+      width: 400px;
+      transition: transform 2s;
+      position: relative;
+      transform-style: preserve-3d;
+    }
+
+    .font, .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .front {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: blue;
+      backface-visibility: hidden;
+    }
+
+    .back {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: blue;
+      backface-visibility: hidden;
+      transform: rotateY(180deg);
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+
+    .card:hover {
+      transform: rotateY(180deg);
+    }
+
+  </style>
+</head>
+<body>
+  
+  <h1>Flipcard</h1>
+
+  <div class="container">
+    <div class="card">
+      <div class="front">
+        <figure>
+          <img src="10250.JPG" alt="">
+          <figcaption>Mathius</figcaption>
+        </figure>
+      </div>
+      <div class="back">
+        
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

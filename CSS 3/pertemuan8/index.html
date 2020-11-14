@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar CSS 3</title>
+  <style>
+
+    .kotak {
+      height: 100px;
+      width: 100px;
+      margin-bottom: 20px;
+      transition: background-color 1s, height 1s;
+    }
+
+    #div1 {
+      background-color:blue;
+      /*  
+        Transition berfungsi untuk 
+        memberi efek transisi pada 
+        saat hover
+      */
+      transition: width 1s;
+    }
+
+    #div1:hover {
+      width: 200px;
+    }
+
+    #div2 {
+      background-color: blue;
+    }
+
+    #div2:hover {
+      background-color: maroon;
+    }
+
+    #div3 {
+      background-color:blue;
+    }
+
+    #div3:hover {
+      /* untuk memberikan waktu 
+      tunggu untuk transisinya */
+      transition-delay:2s;
+      height: 120px;
+    }
+
+    #div4 {
+      background-color: blue;
+      transition: width 2s;
+    }
+
+    #div4:hover {
+      /*
+        untuk menentukan kecepatan
+        dalam melakukan perubahannya.
+        value default ease.
+
+        timing function dibawah
+        maksudnya adalah
+        awalnya melambat
+        akhirnya cepat
+      */
+      transition-timing-function:ease-in;
+      width: 200px;
+    }
+
+    #div5 {
+      background-color: blue;
+      transition: width 2s;
+    }
+
+    #div5:hover {
+      /*  
+        Awalnya cepat
+        akhirnya lambat
+      */
+      transition-timing-function: ease-out;
+      width: 200px;
+    }
+
+    #div6 {
+      background-color: blue;
+      transition: width 2s;
+    }
+
+    #div6:hover {
+      /* 
+        awal dan akhir
+        lambat
+      */
+      transition-timing-function:ease-in-out;
+      width: 200px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Belajar Transition</h1>
+  <div class="kotak" id="div1"></div>
+  <div class="kotak" id="div2"></div>
+  <div class="kotak" id="div3"></div>
+  <div class="kotak" id="div4"></div>
+  <div class="kotak" id="div5"></div>
+  <div class="kotak" id="div6"></div>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar CSS 3</title>
+  <style>
+
+    #box {
+      height: 100px;
+      width: 100px;
+      background-color: blue;
+      border-radius:10px;
+      margin-bottom: 20px;
+    }
+
+    #box2 {
+      height: 100px;
+      width: 100px;
+      background-color: yellow;
+      border-radius:50%;
+    }
+
+    #box3 {
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      box-shadow:10px 10px 10px 10px black;
+    }
+
+    #box4 {
+      height: 100px;
+      width: 100px;
+      background-color: blue;
+      padding:10px;
+      border:5px solid black;
+    }
+
+    #box5 {
+      height: 100px;
+      width: 100px;
+      background-color: lightcoral;
+      padding:10px;
+      border:5px solid black;
+      /*  
+        box-sizing berfungsi untuk membuat
+        ukuran div tidak berubah akibat
+        padding dan border.
+
+        content-box = default value
+        border-box = menghilangkan ukuran 
+                     tambahan akibat padding 
+                     dan border. 
+      */
+      box-sizing:border-box;
+      /* untuk memberi tahu ke chrome 
+      dan safari bahwa ada property CSS 
+      baru */
+      -webkit-box-sizing:border-box;
+      /* untuk memberi tahu ke firefox 
+      bahwa ada property CSS baru*/
+      -moz-box-sizing:border-box;
+      /* untuk memberi tahu opera 
+      bahwa ada property baru CSS */
+      -o-box-sizing:border-box;
+      /* untuk memberi tahu internet 
+      explorer bahwa ada property 
+      CSS baru */
+      -ms-box-sizing:border-box;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Belajar Border Radius</h1>
+
+  <div id="box"></div>
+  <div id="box2"></div>
+
+  <h1>Belajar Box Shadow</h1>
+
+  <div id="box3"></div>
+
+  <h1>Belajar Box Sizing & Vendor Prefix</h1>
+
+  <div id="box4"></div>
+  <div id="box5"></div>
+
+</body>
+</html>

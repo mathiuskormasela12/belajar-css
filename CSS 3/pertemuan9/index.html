@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar CSS 3</title>
+  <style>
+
+    .kotak {
+      height: 100px;
+      width: 100px;
+      margin-bottom: 10px;
+    }
+
+    #kotak0 {
+      /*  
+        Perspective menentukan
+        jarak pandang kita dengan elemen
+        yang di beri efek 3D. Dan Perspective
+        ditulis pada elemen parent-nya dan
+        child element nya akan terkena
+        efeknya. Perspective hanya berlaku
+        pada transformasi 3D.
+        
+        Perspective berfungsi untuk 
+        membuat kita dapat melihat efek
+        3D.
+      */
+      perspective:100px;
+    }
+
+    #div1 {
+      background-color: red;
+      transform: rotateX(15deg);
+    }
+
+    #kotak1 {
+      perspective: 100px;
+      /*  
+        Perspective origin berfungsi
+        untuk memiringkan element. 
+
+        default : 
+        perspective-origin: x y;
+        perspective-origin: 50% 50%;
+
+        x = memiringkan elemen secara
+            horizontal. semakin besar 
+            akan dimiringkan ke kanan
+        y = memiringkan elemen secara
+            vertikal. semakin besar
+            akan dimiringkan kebawah
+      */
+      /* perspective-origin: 90% 190%; */
+      perspective-origin: 100% 100%;
+    }
+
+    #div2 {
+      background-color: blue;
+      transform: rotateX(15deg);
+    }
+
+
+  </style>
+</head>
+<body>
+  
+  <h1>Belajar Perspective & Perspective Origin</h1>
+
+  <div class="kotak" id="kotak0">
+    <div id="div1" class="kotak"></div>
+  </div>
+
+  <div class="kotak" id="kotak1">
+    <div id="div2" class="kotak"></div>
+  </div>
+
+</body>
+</html>

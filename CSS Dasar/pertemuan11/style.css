@@ -1,0 +1,77 @@
+body {
+  background: #dfdfdf url('gambar/logo.png') no-repeat fixed right;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+  display: inline;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration:underline;
+  display: inline;
+}
+
+#text_pendek {
+  font-weight:bold;
+  font-size: 24px;
+  background-color: yellow;
+  width: 50%;
+  height: 200px;
+  max-width: 30%;
+  max-height:100px;
+  /* Cara menghapus atau menghilangkan element HTML */
+  /* 
+    display none akan benar-benar menghapus 
+    element dan tidak akan menyisahkan jarak 
+    sedikit pun 
+  */
+  display:none;
+  /* cara menyembunyikan element HTML */
+  /* 
+    hanya menyembunyikan element 
+    dan akan meninggalkan jarak dari 
+    element yang disembunyikan untuk 
+    menandakan bahwa element itu masih 
+    ada namun hanya di sembunyikan 
+  */
+  /* visibility: hidden; */
+}
+
+#text_panjang {
+  letter-spacing:5px;
+  word-spacing:5px;
+  text-align:justify;
+  text-indent: 30px;
+  line-height: 20px;
+}
+
+.menu {
+  display: inline-block;
+  height: 50px;
+  width: 100px;
+  text-decoration: none;
+}
+
+.menu:link {
+  color: white;
+  background: grey;
+}
+
+.menu:visited {
+  color: white;
+  background: yellow;
+}
+
+.menu:hover {
+  background:green;
+}
+
+.menu:active {
+  background: white;
+}
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Animation</title>
+  <style>
+
+    .box {
+      height: 150px;
+      width: 150px;
+      background-color: yellow;
+      animation-name: changeColor;
+      animation-duration: 4s;
+
+      -webkit-animation-name: changeColor;
+      -webkit-animation-duration: 4s;
+
+      -moz-animation-name: changeColor;
+      -moz-animation-duration: 4s;
+
+      -o-animation-name: changeColor;
+      -o-animation-duration: 4s;
+
+      -ms-animation-name: changeColor;
+      -ms-animation-duration: 4s;
+    }
+
+    /*  
+      keyframes berfungsi untuk
+      membuat animasi pada CSS. 
+
+      rumus :
+
+      @keyframes namaKeyframes {
+        from {
+          value awal
+          property: value;
+        }
+        to {
+          menjadi value yang beda
+          property: value2;
+        }
+      }
+
+      @-webkit-keyframes namaKeyframes {
+        from {
+          value awal
+          property: value;
+        }
+        to {
+          menjadi value yang beda
+          property: value2;
+        }
+      }
+    */
+    @keyframes changeColor {
+      from {
+        background-color: yellow;
+        transform: rotate(0deg);
+      }
+      to {
+        background-color: teal;
+        transform: rotate(180deg);
+      }
+    }
+
+    @-webkit-keyframes changeColor {
+      from {
+        background-color: yellow;
+        transform: rotate(0deg);
+      }
+      to {
+        background-color: teal;
+        transform: rotate(180deg);
+      }
+    }
+
+    @-moz-keyframes changeColor {
+      from {
+        background-color: yellow;
+        transform: rotate(0deg);
+      }
+      to {
+        background-color: teal;
+        transform: rotate(180deg);
+      }
+    }
+
+    @-ms-keyframes changeColor {
+      from {
+        background-color: yellow;
+        transform: rotate(0deg);
+      }
+      to {
+        background-color: teal;
+        transform: rotate(180deg);
+      }
+    }
+
+    @-o-keyframes changeColor {
+      from {
+        background-color: yellow;
+        transform: rotate(0deg);
+      }
+      to {
+        background-color: teal;
+        transform: rotate(180deg);
+      }
+    }
+
+  </style>
+</head>
+<body>
+  
+  <h1>Belajar Animation</h1>
+  <div class="box"></div>
+
+</body>
+</html>

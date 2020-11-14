@@ -1,0 +1,39 @@
+.box {
+  height: 200px;
+  width: 200px;
+}
+
+#satu {
+  background-color: limegreen;
+}
+
+/*  
+  ====== Belajar Position ======
+
+  a.Static
+    Static merupakan posisi
+    default. Dengan static kita
+    tidak memiliki akses ke property
+    top, left, right dan bottom.
+  b.Relative
+    - membuat elemen maju satu dimensi
+    - memiliki akses ke property top,
+      left, right dan bottom.
+    - tidak akan berpengaruh terhadap elemen
+      lain.
+    - Bergerak relatif terhadap posisi
+      semula.
+    - Ruang tempat sebelumnya akan tetap
+      ada.
+*/
+#dua {
+  background-color: magenta;
+  position: relative;
+  top:100px;
+  left:50px;
+  /* margin-top: 100px; */
+}
+
+#tiga {
+  background-color: skyblue;
+}

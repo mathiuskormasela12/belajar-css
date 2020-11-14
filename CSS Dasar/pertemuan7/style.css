@@ -1,0 +1,36 @@
+body {
+  background: #dfdfdf url('gambar/logo.png') no-repeat fixed right;
+  /* Untuk mengubah jenis tulisan */
+  /* 
+    Kalau kita mengatur style di tag <body> 
+    maka semua element HTML yang di dalam <body> 
+    akan ikut terkena.
+  */
+  font-family: sans-serif;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration:underline;
+}
+
+#text_pendek {
+  /* untuk mengatur ketebalan huruf */
+  font-weight:bold;
+  /* untuk mengatur ukuran huruf */
+  font-size: 24px;
+}
+
+#text_panjang {
+  letter-spacing:5px;
+  word-spacing:5px;
+  text-align:justify;
+  text-indent: 30px;
+  line-height: 20px;
+}

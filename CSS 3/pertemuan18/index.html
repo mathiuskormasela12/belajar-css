@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Animation</title>
+  <style>
+
+    .box {
+      height: 150px;
+      width: 150px;
+      background-color: yellow;
+      animation-name: changeColor;
+      animation-duration: 4s;
+
+      -webkit-animation-name: changeColor;
+      -webkit-animation-duration: 2s;
+
+      -moz-animation-name: changeColor;
+      -moz-animation-duration: 2s;
+
+      -o-animation-name: changeColor;
+      -o-animation-duration: 2s;
+
+      -ms-animation-name: changeColor;
+      -ms-animation-duration: 2s;
+
+      animation-iteration-count: 4;
+      /* animation-direction:alternate; */
+
+      /* 
+        untuk nentuin kelambatannya 
+        ease-in = lambat ketika mulai
+        ease-out = lambat ketika diakhir
+        ease-in-out = lambat ketika diawal
+                      dan akhir.
+      */
+      /* animation-timing-function: ease-out; */
+
+      /* untuk ngedelay animasinya */
+      /* animation-delay: 2s; */
+
+      /* untuk mempause animasinya */
+      /* animation-play-state:paused; */
+
+      /*  
+        untuk mengatur ketika animasi 
+        telah berhenti animansinya
+        berhenti di kondisi mana. 
+
+        forwards = berhenti di kondisi to 
+        backwards = berhenti di kondisi from
+      */
+      animation-fill-mode: forwards;
+    }
+
+    .box:hover {
+      /* untuk menjalankan animasinya */
+      /* animation-play-state: running; */
+    }
+
+    /*  
+      Kita dapat mengatur animasi
+      agar lebih detail dengan
+      menggunakan persen untuk mengganti
+      from dan to
+    */
+    @keyframes changeColor {
+      /* keadaan awal */
+      0% {
+        background-color: yellow;
+        width: 200px;
+      }
+      /* 25% dari waktunya */
+      25% {
+        background-color: teal;
+      }
+      /* 45% dari waktunya */
+      45% {
+        background-color: violet;
+        width: 150px;
+      }
+      /* 65% dari waktunya */
+      65% {
+        background-color: lightgreen;
+      }
+      /* 80% dari waktunya */
+      80% {
+        background-color: magenta;
+        width: 100px;
+      }
+      /* 90% dari waktunya */
+      90% {
+        background-color: orangered;
+      }
+      /* 100% dari waktunya */
+      100% {
+        background-color: red;
+        width: 50px;
+      }
+    }
+
+    /* @-webkit-keyframes changeColor {
+      from {
+        background-color: yellow;
+        transform: rotate(0deg);
+      }
+      to {
+        background-color: teal;
+        transform: rotate(180deg);
+      }
+    }
+
+    @-moz-keyframes changeColor {
+      from {
+        background-color: yellow;
+        transform: rotate(0deg);
+      }
+      to {
+        background-color: teal;
+        transform: rotate(180deg);
+      }
+    }
+
+    @-ms-keyframes changeColor {
+      from {
+        background-color: yellow;
+        transform: rotate(0deg);
+      }
+      to {
+        background-color: teal;
+        transform: rotate(180deg);
+      }
+    }
+
+    @-o-keyframes changeColor {
+      from {
+        background-color: yellow;
+        transform: rotate(0deg);
+      }
+      to {
+        background-color: teal;
+        transform: rotate(180deg);
+      }
+    } */
+
+  </style>
+</head>
+<body>
+  
+  <h1>Belajar Animation</h1>
+  <div class="box"></div>
+
+</body>
+</html>

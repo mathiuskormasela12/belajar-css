@@ -1,0 +1,46 @@
+div {
+  margin: auto;
+}
+
+.container {
+  height: 650px;
+  width: 600px;
+  border: 10px solid green;
+  position: relative;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+#satu {
+  background-color: limegreen;
+}
+
+/*  
+  ====== Belajar Position ======
+
+  Fixed :
+  a. Mengubah elemen menjadi maju
+     satu dimensi.
+  b. Memiliki izin untuk menggunakan
+     property top, left, right dan bottom.
+  c. relatif terhadap window
+  d. elemen akan terlihat melayang
+*/
+#dua {
+  background-color: magenta;
+  position: fixed;
+  top:0;
+  right:0;
+  /* margin-top: 100px; */
+}
+
+#tiga {
+  background-color: skyblue;
+}

@@ -1,0 +1,24 @@
+/*
+  selector {
+    property: value;
+  }
+
+  keterangan :
+  selector = element HTML yang mau diubah
+             dan bagaimana cara kita kita memilih
+             element mana yang akan dihias.
+  property = apa yang mau diubah, contoh warna atau
+             ukuran huruf. Property adalah fungsi-fungsi
+             yang otomatis sudah ada dari CSS
+  value     = nilai dari propertynya, contohnya
+              property color memiliki value blue.
+*/
+
+h1 {
+  color: red;
+}
+
+h2 {
+  color:blue;
+  font-size:30px;
+}

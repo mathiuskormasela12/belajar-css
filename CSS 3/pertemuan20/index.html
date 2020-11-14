@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar CSS 3</title>
+  <style>
+
+    .box {
+      width: 250px;
+      height: 150px;
+      background-color: sandybrown;
+      overflow: hidden;
+      /*  
+        Di CSS 3 Kita bisa mengatur 
+        overflow lebih spesifik lagi. 
+        overflow-y = untuk mengatur secara vertical
+        overflow-x = untuk mengatur secara horizontal
+      */
+      /* overflow-y: scroll; */
+      /*  
+        untuk mengatur teks yang keluar dari
+        div kita juga dapat menggunakan 
+        resize untuk mengubah ukuran elemen
+        dengan cara user melakukan tarik 
+        kekanan dan keatas. 
+
+        resize horizontal = menarik elemen secara horizontal
+        resize vertical = menarik elemen secara vertical
+        resize both = menarik elemen secara vertial dan
+                      horizontal
+        ket :
+        resize perlu property 
+        overflow hidden
+      */
+      resize: both;
+    }
+
+    img {
+      /*  
+        untuk membuat element
+        menjadi transparan
+      */
+      opacity: 0.4;
+      transition: opacity 2s;
+    }
+
+    img:hover {
+      opacity: 1;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="box">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum debitis deleniti, minima saepe, quod repellat repudiandae explicabo reprehenderit dolores placeat pariatur possimus quibusdam vero aut atque ullam eum. Reiciendis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum debitis deleniti, minima saepe, quod repellat repudiandae explicabo reprehenderit dolores placeat pariatur possimus quibusdam vero aut atque ullam eum. Reiciendis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum debitis deleniti, minima saepe, quod repellat repudiandae explicabo reprehenderit dolores placeat pariatur possimus quibusdam vero aut atque ullam eum. Reiciendis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum debitis deleniti, minima saepe, quod repellat repudiandae explicabo reprehenderit dolores placeat pariatur possimus quibusdam vero aut atque ullam eum. Reiciendis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum debitis deleniti, minima saepe, quod repellat repudiandae explicabo reprehenderit dolores placeat pariatur possimus quibusdam vero aut atque ullam eum. Reiciendis!
+  </div>
+
+  <img src="coba.jpg" width="300" alt="">
+
+</body>
+</html>

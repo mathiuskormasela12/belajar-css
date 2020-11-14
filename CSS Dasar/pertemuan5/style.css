@@ -1,0 +1,52 @@
+body {
+  /* background-color:#dfdfdf;  */
+  /* Untuk membuat background gambar */
+  /* background-image: url('gambar/logo.png'); */
+  /* 
+    Untuk mencegah gambar ditampilkan
+    lebih dari sekali jika ukuran gambarnya
+    kecil.
+
+    value background-repeat :
+    a. no-repeat = mencegah gambar ditampilkan
+                   lebih dari sekali secara vertikal
+                   dan horizontal.
+    b. repeat-x = membuat gambar hanya akan di repeat
+                  secara horizontal
+    c. repeat-y = membuat gambar hanya akan di repeat
+                  secara vertical
+  */
+  /* background-repeat: no-repeat; */
+  /* 
+    Untuk mengatur perlakuan background.
+    Jika ingin background ikut bergerak
+    ketika di scroll maka kita dapat mengggunakan
+    value scroll (default) atau jika kita ingin
+    membuat gambar tidak bergerak ketika di scroll
+    (kayak melayang gtu) maka kita bisa menggunakan
+    value fixed.
+  */
+  /* background-attachment: fixed; */
+  /* 
+    Untuk mengatur posisi background dimana 
+    rumus :
+    background-position: x y;
+    contoh :
+    left top = kiri atas
+    left bottom = kiri bawah
+    right top = kanan atas
+    right bottom = kanan bawah
+    center top = tengah atas
+    center bottom = tengah bawah
+    Right center = kanan tengah
+    Left center = kiri tengah
+    center = tengah-tengah
+  */
+  /* background-position: center center; */
+
+  /* Untuk membuat commentar di dalam CSS */
+  /* ini adalah commentar */
+
+  /* Shothand */
+  background: #dfdfdf url('gambar/logo.png') no-repeat fixed right;
+}

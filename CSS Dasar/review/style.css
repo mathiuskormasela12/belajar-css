@@ -1,0 +1,148 @@
+/*
+	Struktur Dasar CSS
+	
+	Selector :
+	a. Berdasarkan nama tag
+	   semua tag h1 akan terkena style
+	b. Berdasarkan class
+	   semua tag html yg memiliki class tertentu saja
+	c. Berdasarkan id
+	   Sebuah tag html yg memiliki id tertentu saja
+
+	selector {
+		property:value;
+	}
+*/
+h1 {
+	text-transform: lowercase;
+	/* background-color: yellow; */
+	/* background-image: url('../pertemuan1/gambar/logo.png'); */
+}
+
+.text {
+	/* 1. untuk memberi warna */
+	color: red;
+	/* 2. untuk memberi garis */
+	text-decoration: line-through;
+	/* 3. untuk membuat text menjadi huruf kapital atau kecil semua */
+	text-transform: lowercase;
+	/* 4. untuk membuat text rata kanan, kiri, tengah dan kanan kiri */
+	text-align: justify;
+	/* 5. untuk membuat indentasi paragraf */
+	text-indent: 20px;
+	/* 6. untuk membuat jarak perkata */
+	word-spacing: 10px;
+	/* 7. untuk membuat jarak perhuruf */
+	letter-spacing: 5px;
+	/* 8. untuk mengatur tinggi text */
+	line-height: 15px;
+
+	/* 1. untuk mengatur jenis font */
+	/* font-family: arial; */
+	/* 2. untuk mengatur ketebalan text */
+	/* font-weight: bold; */
+	/* 3. untuk mengatur ukuran huruf */
+	/* font-size: 10px; */
+}
+
+/* kondisi biasa */
+a:link {
+	color: red;
+}
+
+/* Kondisi sudah dikunjungi */
+a:visited {
+	color: lime;
+}
+
+/* kondisi ketik di klik */
+a:active {
+	background-color: blue;
+}
+
+/* kondisi ketika di hover */
+a:hover {
+	text-decoration: none;
+}
+
+.container {
+	width: 400px;
+	margin: 0 auto;
+	border: 5px solid black;
+}
+
+.container > img {
+	float: left;
+}
+
+
+.box {
+	height: 100px;
+	width: 100px;
+	float: left;
+}
+
+.container::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.red {
+	background-color: red;
+}
+
+.lime {
+	background-color: lime;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.green {
+	background-color: green;
+}
+
+.coral {
+	background-color: coral;
+}
+
+p.a:not(.b) {
+	text-decoration: line-through;
+}
+
+.wadah {
+	height: 150px;
+	width: 300px;
+	perspective: 800px;
+}
+
+.kartu {
+	height: 100%;
+	width: 100%;
+	transition: transform .5s;
+	position: relative;
+	transform-style:preserve-3d;
+}
+
+.kartu:hover {
+	transform: rotateY(180deg);
+}
+
+.depan, .belakang {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	backface-visibility: hidden;
+}
+
+.depan {
+	background-color: blue;
+}
+
+.belakang {
+	
+	background-color: blue;
+	transform: rotateY(180deg);
+}

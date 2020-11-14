@@ -1,0 +1,47 @@
+body {
+  background: #dfdfdf url('gambar/logo.png') no-repeat fixed right;
+}
+
+h1 {
+  /* Mengatur warna teks */
+  color: blue;
+  /* Mengatur teks rata tengah */
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  /* 
+    Untuk mengubah teks menjadi
+    full huruf kapital, huruf kecil
+    dan huruf depan kapital. 
+
+    capitalize = untuk membuat huruf depan
+                 menjadi huruf kapital
+    uppercase = untuk membuat semua huruf
+                menjadi huruf kapital
+    lowercase = untuk membuat semua huruf
+                menjadi huruf kecil.
+  */
+  text-transform: uppercase;
+  /* 
+    Untuk mengatur garis pada teks. 
+    underline = membuat garis bawah
+    overline = untuk membuat garis atas
+    line-through = untuk membuat garis tengah
+  */
+  text-decoration:underline;
+}
+
+#text_panjang {
+  /* untuk mengatur jarak antar huruf */
+  letter-spacing:5px;
+  /* untuk mengatur jarak antar kata */
+  word-spacing:5px;
+  /* untuk membuat teks rata kanan kiri */
+  text-align:justify;
+  /* Untuk membuat indentasi paragraf */
+  text-indent: 30px;
+  /* untuk membuat tinggi baris teks */
+  line-height: 20px;
+}

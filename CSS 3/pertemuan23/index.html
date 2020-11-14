@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar CSS3</title>
+  <style>
+
+    /*  
+      untuk memilih elemen ke empat
+    */
+    ul > li:nth-child(4) {
+      color: coral;
+    }
+
+    /* untuk memilih elemen yang genap */
+    li:nth-child(even) {
+      /* text-decoration: underline; */
+    }
+
+    /* untuk memilih elemen yang ganjil */
+    li:nth-child(odd) {
+      /* text-decoration: line-through; */
+    }
+
+    /* untuk memilih elemen yang kelipatan 3 */
+    /* 
+      rumusnya : 
+       contoh
+       a. 3n + 0 = 3.0 + 0 = 0
+       b. 3n + 0 = 3.1 + 0 = 3
+       b. 4n + 2 = 4.0 + 2 = 2
+    */
+    li:nth-child(3n + 0) {
+      background-color: cornflowerblue;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <h1>Belajar NTH Child</h1>
+
+  <ul>
+    <li>List Pertama</li>
+    <li>List Kedua</li>
+    <li>List Ketiga</li>
+    <li>List Keempat</li>
+    <li>List Kelima</li>
+    <li>List Keenam</li>
+    <li>List Ketujuh</li>
+    <li>List Kedelapan</li>
+    <li>List Kesembilan</li>
+    <li>List Kesepuluh</li>
+    <li>List Kesebelas</li>
+    <li>List Kedua belas</li>
+  </ul>
+
+</body>
+</html>

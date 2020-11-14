@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Animation</title>
+  <style>
+
+    .box {
+      height: 650px;
+      background: url('coba.jpg');
+      /*  
+        background-size berfungsi untuk
+        menentukan ukuran backgroundnya. 
+
+        contain = membuat ukuran background
+                  sesuai dengan background aslinya. 
+                  Jika ukuran div nya 600px dan ukuran
+                  background nya hanya 400px maka
+                  background tidak akan memaksa untuk
+                  menampilkan background dengan ukuran 600px
+                  tapi akan mentok ke 400px. 
+        cover = memaksa background untuk menyesesuiakan
+                ukuran divnya. contoh ketika background
+                ukurannya 600px dan ukuran div nya
+                1000px maka cover akan memaksa background
+                untuk menampilkan ukuran 1000px melebihi
+                ukuran asli dari background itu dan ini
+                membuat ada bagian background yg kepotong.
+      */
+      /* background-size: cover; */
+      background-size: 200px 200px;
+      background-repeat: no-repeat;
+      border: 12px dashed black;
+      /*  
+        syarat background-clip : 
+        a. tidak boleh menggunakan 
+           property background-repeat
+
+        untuk membuat border didalam background. 
+        padding di hitung dari jarak
+        border yg menimpa background ke kontennya.
+        background-clip: border-box (default)
+
+        untuk membuat background didalam border
+        background-clip: padding-box;
+
+        untuk membuat padding dihitung
+        dari jarak antara border dengan background
+        background-clip: content-box;
+      */
+      /* background-clip: content-box; */
+      /*  
+        syarat background origin : 
+        a. harus pake background repeat
+
+        padding-box = border diluar background
+        border-box = border nyatu dengan background
+        content-box = padding dihitung dari border ke background
+      */
+      /* background-origin: content-box; */
+      /* background-origin: border-box; */
+      padding: 20px;
+    }
+
+
+  </style>
+</head>
+<body>
+  
+  <div class="box">
+    Text here
+  </div>
+
+</body>
+</html>

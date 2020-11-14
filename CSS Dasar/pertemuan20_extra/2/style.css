@@ -1,0 +1,44 @@
+.container {
+  width: 600px;
+  border: 2px solid black;
+  margin:auto;
+  /*  
+    Cara untuk mengakali efek float
+    karena efeknya membuat parent elemennya
+    collapse atau runtuh.
+  */
+  /* overflow:auto; */
+}
+
+img {
+  width: 350px;
+  float: left;
+}
+
+/*  
+  Efek Float membuat parent elemennya
+  collapse atau runtuh karena elemen
+  yang diberi float akan dianggap
+  sudah tidak ada. Dengan overflow
+  kita hanya mengakali efek elemennya
+  float yang membuat parent nya collapse.
+  Cara yg lebih di sarankan untuk mengatasi
+  efek float kita harus menggunakan clear.
+*/
+.clear {
+  clear:left;
+}
+
+/*  
+  Ada yang bilang jika menggunakan
+  float dengan menggunakan div kosong
+  maka akan membuat HTML kita tidak 
+  rapih, oleh sebab itu ada teknik
+  yang lain agar HTML kita lebih rapih
+  menggunakan teknik after.
+*/
+.container > p::after {
+  content: '';
+  display: block;
+  clear: left;
+}

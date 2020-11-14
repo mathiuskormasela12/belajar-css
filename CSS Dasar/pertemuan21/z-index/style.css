@@ -1,0 +1,38 @@
+.box {
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+/*  
+  ==== Belajar Z-Index ====
+
+  Z-index berfungsi untuk menentukan 
+  elemen mana yang paling depan. Z-index
+  harus digunakan pada elemen yg memiliki
+  posisi non-static
+*/
+#satu {
+  background-color: limegreen;
+  position: absolute;
+  z-index:2;
+}
+
+#dua {
+  background-color: magenta;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 1;
+}
+
+#tiga {
+  background-color: skyblue;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  z-index:-1;
+}

@@ -1,0 +1,47 @@
+.container {
+  width: 600px;
+  border: 2px solid black;
+}
+
+.kotak {
+  height: 100px;
+  width: 100px;
+  margin: 5px;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+}
+
+/*  
+  ===== Belajar Float =====
+  Float berguna untuk mengatur posisi suatu
+  element. Dengan float kita dapat mengatur
+  posisi suatu elemen berada di kanan atau
+  dikiri parent elemen nya secara paksa.
+
+  efek-efek float :
+  a. Elemen yg diberi float
+     akan dianggap sudah tidak ada
+     lagi.
+  b. Elemen selanjutnya akan sejajar
+     dengan dia selama ukuran parentnya
+     mencukupi.
+
+  Values of property :
+  none -> default value
+  left -> memaksa posisi elemen di kiri parent elemen
+  right -> memaksa posisi elemen di kanan parent elemen
+*/
+
+#satu {
+  background-color: teal;
+}
+
+#dua {
+  background-color:limegreen;
+  float: right;
+}
+
+#tiga {
+  background-color: salmon;
+}

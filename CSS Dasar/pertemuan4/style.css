@@ -1,0 +1,20 @@
+/* 
+  ====== Belajar Background Color ======  
+
+  Untuk memberi background warna pada website kita
+  kita harus menggunakan property background-color.
+  Untuk valuenya kita bisa isi dengan 3 option, yaitu :
+  1. Nama warna (ex: blue)
+  2. Hex color (ex: #dfdfdf)
+  3. RGB color (ex: 255,0,0 )
+*/
+
+body {
+  /* Untuk memberi background warna */
+  /* Dengan RGB */
+  /* background-color: rgb(122,50,120); */
+  /* Dengan Hex */
+  /* background-color:#dfdfdf; */
+  /* Dengan nama warna */
+  background-color:gray;
+}

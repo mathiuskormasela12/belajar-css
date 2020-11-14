@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eee;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.container {
+  width: 800px;
+  margin: 50px auto;
+  display: flex;
+}
+
+.card {
+  border: 2px solid #aaa;
+  border-radius: 7px;
+  background-color: #eee;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.card .header {
+  height: 150px;
+  background-color: #666;
+}
+
+.card .content {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.content button {
+  margin-top: 8px;
+}
+
+.card:nth-child(2) {
+  transform: scale(1.13);
+}

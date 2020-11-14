@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar CSS3</title>
+  <style>
+
+    /* untuk memilih input yang di checked */
+    input:checked {
+      width: 200px;
+    }
+
+    /* untuk memilih input yang enabled */
+    input:enabled {
+      /* background-color: blue; */
+    }
+
+    /* untuk memilih input yang disabled */
+    input:disabled {
+      /* background-color: crimson; */
+    }
+
+    /*  
+      untuk memilih input
+      yang valuenya tidak sesuai
+      dengan type inputnya. contoh
+      ketika ada input type email
+      dan kita hanya menginputkan 
+      teks biasa maka pseudo invalid
+      ini akan di jalankan.
+    */
+    input:invalid {
+      color: red;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <h1>Belajar Pseudo Classes pada Input</h1>
+
+  <label for="gender">
+    <input type="checkbox" id="gender" checked>
+    Male
+  </label>
+  <label for="gender2">
+    <input type="checkbox" id="gender2">
+    Female
+  </label>
+
+  <br><br>
+
+  <input type="text" placeholder="Nama">
+  <input type="number" placeholder="Usia">
+  <input type="email" placeholder="Email">
+  <input type="text" placeholder="Sekolah" disabled>
+
+</body>
+</html>

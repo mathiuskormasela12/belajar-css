@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan 3D</title>
+  <style>
+
+    body {
+      margin-left: 50px;
+      margin-bottom: 500px;
+    }
+
+    #box {
+      perspective: 700px;
+    }
+
+    #card {
+      color: white;
+      height: 200px;
+      width: 200px;
+      border: 2px solid black;
+      transition: transform 2s;
+      position: relative;
+      transform-style: preserve-3d;
+    }
+
+    #front, #back {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 200px;
+      width: 200px;
+      backface-visibility: hidden;
+    }
+
+    #front {
+      background-color: blue;
+    }
+
+    #back {
+      background-color: red;
+      transform: rotateY(180deg);
+    }
+
+    #card:hover {
+      transform: rotateY(180deg);
+    }
+
+  </style>
+</head>
+<body>
+  
+  <h1>Flipcard</h1>
+
+  <div id="box">
+    <div id="card">
+      <div id="front">Sekolah</div>
+      <div id="back">Koding</div>
+    </div>
+  </div>
+
+</body>
+</html>

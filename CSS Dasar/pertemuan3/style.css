@@ -1,0 +1,50 @@
+/*
+  ===== Belajar Selector =====
+
+  Selector adalah cara untuk kita
+  memilih elemen HTML yang ingin kita 
+  hias.
+
+  Ada 3 Jenis Selector :
+  1. Selector berdasarkan nama tag
+  2. Selector berdasarkan id tag
+  3. Selector berdasarkan class tag
+
+  Perbedaan :
+  selector tag = jika kita memberi style kepada
+                 satu tag contoh tag <a>, maka semua
+                 tag <a> yang ada dalam website kita
+                 akan terkena style itu juga.
+  selector id = selector id akan kita gunakan ketika
+                kita ingin spesifik memberi style kepada
+                satu tag HTML. contoh ketika kita memberi
+                style kepada tag <a> yang memiliki id menu,
+                maka hanya tag <a> yang memiliki id menu
+                itu yg akan terkena style-nya.
+  selector class = selector class akan kita gunakan jika
+                   kita ingin memberi style kepada beberapa
+                   tag html sekaligus. Contoh jika ada 3 tag
+                   <a> yang memiliki class menu, maka yang akan
+                   terkena stylenya hanya ketiga tag <a> yang
+                   memiliki class menu itu.
+*/
+
+/* Selector Class */
+.menu {
+  color: red;
+}
+
+/* Selector Id */
+#menu_web {
+  background: yellow;
+}
+
+/* Selector tag */
+h1 {
+  color: red;
+}
+
+h2 {
+  color:blue;
+  font-size:30px;
+}
